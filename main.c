@@ -6,7 +6,7 @@
 #include <stdio.h>
 
 
-void get_numbers(const char* msg, int nums[3]) {
+void get_numbers(const char* msg, int nums[2]) {
     char answer[256];
     int a, b;
 
@@ -24,7 +24,7 @@ void get_numbers(const char* msg, int nums[3]) {
 
 int main() {
     const char* msg = "Enter two numbers: ";
-    int nums[3];
+    int nums[2];
 
     get_numbers(msg, nums);
 
