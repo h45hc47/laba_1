@@ -6,18 +6,14 @@
 
 void get_numbers(const char* msg, int nums[2]) {
     char answer[256];
-    int a, b;
 
     printf("%s", msg);
     fgets(answer, sizeof(answer), stdin);
 
-    while (sscanf(answer, "%d %d", &a, &b) != 2) {
+    while (sscanf(answer, "%d %d", &nums[0], &nums[1]) != 2) {
         printf("Incorrect input. Try again: ");
         fgets(answer, sizeof(answer), stdin);
     }
-
-    nums[0] = a;
-    nums[1] = b;
 }
 
 int main() {
